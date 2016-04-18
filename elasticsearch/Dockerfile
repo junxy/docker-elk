@@ -28,7 +28,15 @@ RUN /usr/share/elasticsearch/bin/plugin install royrusso/elasticsearch-HQ
 #RUN /usr/share/elasticsearch/bin/plugin install polyfractal/elasticsearch-inquisitor
 
 
-
-
 # web admin, https://github.com/lmenezes/elasticsearch-kopf
 RUN /usr/share/elasticsearch/bin/plugin install lmenezes/elasticsearch-kopf
+
+
+# official & Security for es
+# https://www.elastic.co/downloads/shield
+# RUN /usr/share/elasticsearch/bin/plugin install shield
+
+
+# conf failed ,  https://github.com/floragunncom/search-guard/wiki/Installation
+#RUN /usr/share/elasticsearch/bin/plugin install com.floragunn/search-guard-ssl/2.3.1.8.1
+#RUN /usr/share/elasticsearch/bin/plugin install com.floragunn/search-guard-2/2.3.1.0-beta1
