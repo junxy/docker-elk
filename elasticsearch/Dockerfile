@@ -1,0 +1,34 @@
+FROM elasticsearch:latest
+
+#RUN apt-get update && apt-get install -y netcat
+
+# official & charge
+# https://www.elastic.co/guide/en/marvel/current/getting-started.html
+# https://www.elastic.co/guide/en/marvel/current/installing-marvel.html
+RUN /usr/share/elasticsearch/bin/plugin install license
+RUN /usr/share/elasticsearch/bin/plugin install marvel-agent
+# RUN gosu kibana kibana plugin -i elasticsearch/marvel/latest
+
+
+#~> https://hub.docker.com/r/openlabs/docker-elasticsearch/~/dockerfile/
+# Install the required plugins
+
+# A web front, https://github.com/mobz/elasticsearch-head
+#RUN /usr/share/elasticsearch/bin/plugin install mobz/elasticsearch-head
+
+
+# Monitoring free, https://github.com/royrusso/elasticsearch-HQ
+# more: https://qbox.io/blog/tools-for-monitoring-elasticsearch-performance
+RUN /usr/share/elasticsearch/bin/plugin install royrusso/elasticsearch-HQ
+
+# http://bigdesk.org/
+# RUN /usr/share/elasticsearch/bin/plugin install lukas-vlcek/bigdesk
+
+# query queries, https://github.com/polyfractal/elasticsearch-inquisitor
+#RUN /usr/share/elasticsearch/bin/plugin install polyfractal/elasticsearch-inquisitor
+
+
+
+
+# web admin, https://github.com/lmenezes/elasticsearch-kopf
+RUN /usr/share/elasticsearch/bin/plugin install lmenezes/elasticsearch-kopf
