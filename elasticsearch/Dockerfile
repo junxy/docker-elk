@@ -21,8 +21,6 @@ RUN /usr/share/elasticsearch/bin/plugin install marvel-agent
 # more: https://qbox.io/blog/tools-for-monitoring-elasticsearch-performance
 RUN /usr/share/elasticsearch/bin/plugin install royrusso/elasticsearch-HQ
 
-# http://bigdesk.org/
-# RUN /usr/share/elasticsearch/bin/plugin install lukas-vlcek/bigdesk
 
 # query queries, https://github.com/polyfractal/elasticsearch-inquisitor
 #RUN /usr/share/elasticsearch/bin/plugin install polyfractal/elasticsearch-inquisitor
@@ -40,3 +38,8 @@ RUN /usr/share/elasticsearch/bin/plugin install lmenezes/elasticsearch-kopf
 # conf failed ,  https://github.com/floragunncom/search-guard/wiki/Installation
 #RUN /usr/share/elasticsearch/bin/plugin install com.floragunn/search-guard-ssl/2.3.1.8.1
 #RUN /usr/share/elasticsearch/bin/plugin install com.floragunn/search-guard-2/2.3.1.0-beta1
+
+
+# http://bigdesk.org/
+# RUN /usr/share/elasticsearch/bin/plugin install lukas-vlcek/bigdesk 
+RUN /usr/share/elasticsearch/bin/plugin install AIsaac08/bigdesk
